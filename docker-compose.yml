@@ -1,0 +1,11 @@
+version: '3'
+services:
+  finalfas-service:
+    image: microservice-docker-finalfas:0.0.1-SNAPSHOT 
+    ports:
+      - "8081:8081"
+    restart: on-failure  
+    networks:
+      - orive
+networks:
+  orive:
